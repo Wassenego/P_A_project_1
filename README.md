@@ -1,6 +1,8 @@
 # P_A_project_1
 Python Academy project 1
+
 Popis projektu
+
 V tomto projektu bylo cílem vytvořit textový analyzátor - program, který se bude umět prokousat libovolně dlouhým textem a zjistit o něm různé informace.
 
 Program obsahuje:
