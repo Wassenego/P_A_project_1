@@ -12,17 +12,6 @@ Program obsahuje:
 - zjištění, jestli zadané údaje odpovídají někomu z registrovaných uživatelů,
   pokud je registrovaný, pozdraví jej a umožni mu analyzovat texty,
   pokud není registrovaný, upozorní jej a ukonči program
-
-Registrováni jsou následující uživatelé:
-+------+-------------+
-| user |   password  |
-+------+-------------+
-| bob  |     123     |
-| ann  |   pass123   |
-| mike | password123 |
-| liz  |   pass123   |
-+------+-------------+
-
 - volbu uživatele mezi texty, uloženými v proměnné TEXTS:
 - pokud uživatel vybere takové číslo textu, které není v zadání, program jej upozorní a skončí
 - pokud uživatel zadá jiný vstup než číslo, program jej rovněž upozorní a skončí
