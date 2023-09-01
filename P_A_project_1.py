@@ -15,19 +15,22 @@ password = input("password:")
 
 oddelovac = "-" * 40
 
+pocet_textu = len(task_template.TEXTS)
+
 if user.lower() not in users.keys() or users[user.lower()] != password:
     print("unregistered user, terminating the program..")
     quit()
 else:
     print(oddelovac, "\nWelcome to the app, ", user.lower(),"\n" \
-          "We have 3 texts to be analyzed.\n",oddelovac, sep="") 
+          "We have ", pocet_textu," texts to be analyzed.\n",oddelovac, sep="") 
 
-selection = input("Enter a number btw. 1 and 3 to select: ")
-if selection not in ["1", "2", "3"]:
+selection = input(f"Enter a number btw. 1 and {pocet_textu} to select: ")
+if selection.isnumeric() and 0 < int(selection) <= pocet_textu:
+    print(oddelovac)
+
+else:
     print("You selection is incorrect, terminating the program..")
     quit()
-else:
-    print(oddelovac)
 
 text = task_template.TEXTS[int(selection) - 1]
 
